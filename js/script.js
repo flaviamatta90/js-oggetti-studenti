@@ -3,10 +3,9 @@ $(document).ready(
   function (){
 
     // stampare a video con handbarbs
-    // var source = document.getElementById("entry-template").innerHTML;
-    // var template = Handlebars.compile(source);
-    //
-    // var html = template(proptieta);
+    var source = document.getElementById("entry-template").innerHTML;
+    var template = Handlebars.compile(source);
+
 
     // 1 Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso il for in tutte le proprietà.
 
@@ -17,9 +16,10 @@ $(document).ready(
     };
 
     for (var key in proprieta){
-      // console.log(key + " " + proprietà[key]);
+      console.log(key + " " + proprieta[key]);
     }
 
+    var html = template(proprieta);
 
     // 2 Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
     // 3 Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
