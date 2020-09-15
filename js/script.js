@@ -14,6 +14,13 @@ $(document).ready(
     }
 
     // 2 Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
+
+    // 3 Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+    var nomeUtente = prompt("Inserisci il nome dello studente")
+    var cognomeUtente = prompt("Inserisci il cognome dello studente")
+    var etaUtente = prompt("Inserisci l'età dello studente");
+
     var studenti =  [
   {
     'Nome' : 'Alberto',
@@ -44,6 +51,12 @@ $(document).ready(
     'Nome' : 'Celeste',
     'Cognome' : 'Verdi',
   },
+
+  {
+    'Nome' : nomeUtente,
+    'Cognome' : cognomeUtente,
+    'eta' : etaUtente,
+  },
 ];
 
   for(var i = 0; i < studenti.length; i++){
@@ -54,9 +67,9 @@ $(document).ready(
 
     }
   };
+
+
     // 3 Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-
-
 
 
 
